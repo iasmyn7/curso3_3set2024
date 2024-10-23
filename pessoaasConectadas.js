@@ -1,15 +1,10 @@
-/*função assincrona, espera até que toda a 
-requisição seja executada, ou seja,
-todos os dados sejam enviadoss*/
+
 async function pessoasConectadas() {
     const url = 'https://raw.githubusercontent.com/guilhermeomrails/api/main/numero_usuarios.json'
-    //contante que armazena uma reposta  await=espera ////fetch=faz a requisição
     const res = await fetch(url);
-    //espera as reposta serem convertidas em JSON
     const dados = await res.json();
 
-    console.log(dados);//mostra os valores armazenados na variável dados 
-
+    console.log(dados);
     const nomeDasRedes = Object.keys(dados);
     const quantidadeUsuarios = Object.values(dados);
 
@@ -30,4 +25,4 @@ async function pessoasConectadas() {
 
 
 
-pessoasConectadas();//chama a função
+pessoasConectadas();
