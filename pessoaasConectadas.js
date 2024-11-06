@@ -1,10 +1,11 @@
-
 async function pessoasConectadas() {
     const url = 'https://raw.githubusercontent.com/guilhermeomrails/api/main/numero_usuarios.json'
+    
     const res = await fetch(url);
     const dados = await res.json();
 
     console.log(dados);
+
     const nomeDasRedes = Object.keys(dados);
     const quantidadeUsuarios = Object.values(dados);
 
