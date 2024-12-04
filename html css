@@ -18,10 +18,9 @@
         </nav>
 
     </header>
-    <main class="graficos-section"><!-- coloca o conteudo (gráficos)-->
+    <main class="graficos-section"><
 
         <section class="graficos-container" id="graficos-container">
-            <!--Colocar os gráficos-->
 
         </section>
 
